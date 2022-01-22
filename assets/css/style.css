@@ -1,0 +1,391 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ini: Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    /* cor do background que vai ocupar o body */
+    z-index: 9990000;
+    /* z-index para jogar para frente e sobrepor tudo */
+    opacity: 0.8;
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animaÃ§Ã£o)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bolas>div {
+    display: inline-block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animarBola;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.bolas>div:nth-child(1) {
+    animation-duration: 0.75s;
+    animation-delay: 0;
+}
+
+.bolas>div:nth-child(2) {
+    animation-duration: 0.75s;
+    animation-delay: 0.12s;
+}
+
+.bolas>div:nth-child(3) {
+    animation-duration: 0.75s;
+    animation-delay: 0.24s;
+}
+
+@keyframes animarBola {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    16% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+
+    33% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* end: Preloader */
+
+.navbar-light .navbar-toggler-icon {
+    color: #fff;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+
+}
+
+.navProVest {
+    color: #fff;
+}
+
+.bg-video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover;
+    background-position: top center;
+
+}
+
+.bg-rgb {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.linkLogo {
+    display: flex;
+    align-items: center;
+}
+
+.linksLogSig {
+    justify-content: flex-end;
+}
+
+.linksLogSig a {
+    font-weight: 100;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 40%);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .colorLinks {
+    color: rgb(255 255 255 / 80%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 40%);
+}
+
+.colorLinks {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin-left: 6px;
+    padding: 5px
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.tituloInput {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.DEUSTANOCODIGO {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+
+}
+
+.search-btn {
+    color: rgb(255 255 255 / 40%);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background-color: transparent;
+    color: rgb(255 255 255 / 80%);
+}
+
+
+/*Tela Login Cadastro*/
+
+
+.colorNavBarLogin {
+    background-color: #000;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.centerNavsTabs {
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.widthContainer {
+    width: 50%;
+}
+
+
+.cardForm {
+    border-radius: 25px;
+    margin-top: 6px;
+    padding: 20px;
+    font-size: 6px;
+}
+
+.btnLogin {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.form-control {
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .widthContainer {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #000 !important;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 25px;
+    /* border-top-left-radius: .25rem; */
+    /* border-top-right-radius: .25rem; */
+}
+
+.pAP {
+    margin-top: 25px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.sizeNavsTabs {
+    font-size: 10px;
+}
+
+.cardAP {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: -16px;
+}
+
+.ou {
+    font-size: 11px;
+}
+
+/* Pesquisa */
+
+.cardContainerPesquisa {
+    margin-top: 6rem;
+}
+
+.form-select {
+    border-radius: 25px;
+}
+
+.btnVerMais {
+    border-radius: 25px;
+    color: #000;
+    background-color: #fff;
+    border-color: #000000;
+    width: 180px;
+    transition: 0.5s;
+
+}
+
+.btnVerMais:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #fff;
+    transition: 0.5s;
+}
+
+.cardVerMais {
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+    box-shadow: inset 0 0 1em white, 0 0 1em #9d9d9d;
+    transition: 0.5s;
+}
+
+.cardVerMais:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.search-btnNav {
+    color: rgb(255 255 255 / 40%);
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: -34px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-color: #000;
+}
+
+.cardsAling {
+    display: grid;
+    justify-content: center;
+
+}
+
+/* footer geral*/
+
+.footerGeral {
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footerGeral ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footerGeral li {
+    padding: 8px;
+}
+
+.footerGeral a {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+}
+
+dl, ol, ul {
+    margin-top: revert;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
