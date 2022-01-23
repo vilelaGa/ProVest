@@ -380,6 +380,58 @@ dl, ol, ul {
     margin-top: revert;
 }
 
+/* ver mais */
+
+.spanCategoriaCurso {
+    font-size: 10px;
+    background-color: #c4c4c4;
+    padding: 6px;
+    color: #fff;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.spanView {
+    font-size: 12px;
+}
+
+.btnEntrarContato {
+    text-decoration: none;
+    background-color: #0c52b9;
+    padding: 7px;
+    color: #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.btnEntrarContato:hover {
+    background-color: #fff;
+    color: #0c52b9;
+    border: 1px solid #0c52b9;
+    transition: 0.5s;
+}
+
+.btnOutrosContatos {
+    text-decoration: none;
+    background-color: #910dfd;
+    padding: 7px;
+    color: #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.btnOutrosContatos:hover {
+    background-color: #fff;
+    color: #910dfd;
+    border: 1px solid #910dfd;
+    transition: 0.5s;
+}
+.campoInfomacaoAdd{
+    background-color: #f7f7f7;
+    padding: 18px;
+    border-radius: 20px;
+}
+
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {

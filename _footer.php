@@ -1,7 +1,7 @@
 <footer class="footerGeral">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <ul>
                     <li>© 2022 ProVest</li>
                     <a href="#">
@@ -15,7 +15,14 @@
                     </a>
                 </ul>
             </div>
-            <div class="col-md-6">
+            <!-- CÓDIGO PARA DEUS -->
+            <div class="col-md-2">
+                <ul>
+                    <li>EKBALLO</li>
+                </ul>
+            </div>
+            <!-- CÓDIGO PARA DEUS -->
+            <div class="col-md-5">
                 <ul>
                     <a href="#">
                         <li>Contato</li>

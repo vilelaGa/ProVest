@@ -102,7 +102,7 @@ include("_head.php");
 
             <div class="col-md-4 cardsAling p-2">
                 <div class="card cardVerMais text-center" style="width: 16rem;">
-                    <img style="object-fit: cover; border-radius: 25px;" width="286px" height="140px" src="https://cuponomia-a.akamaihd.net/img/stores/medium/alfa-concursos-637046004244202632.png?v4" class="card-img-top" alt="...">
+                    <img style="object-fit: cover; border-radius: 25px;" width="286px" height="140px" src="https://assets.alfaconcursos.com.br/assets/layout/alfacon/gptw/img_cta-5b4edbc8fc296192ea77c971cd46275de4f9de8810499026cb10a6489244c378.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">AlfaCon</h5>
                         <span>
