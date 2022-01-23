@@ -426,10 +426,95 @@ dl, ol, ul {
     border: 1px solid #910dfd;
     transition: 0.5s;
 }
-.campoInfomacaoAdd{
+
+.campoInfomacaoAdd {
     background-color: #f7f7f7;
     padding: 18px;
     border-radius: 20px;
+}
+
+.btnTelefVerMais {
+    background-color: #0262d1;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btnTelefVerMais:hover {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #0262d1;
+    border: 1px solid #0262d1;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.btnWhatsVerMais {
+    background-color: #038f4e;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btnWhatsVerMais:hover {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #038f4e;
+    border: 1px solid #038f4e;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.btnEmailVerMais {
+    background-color: #d63403;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btnEmailVerMais:hover {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #d63403;
+    border: 1px solid #d63403;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.btnSiteVerMais {
+    background-color: #125791;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btnSiteVerMais:hover {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 6px;
+    font-size: 12px;
+    color:#125791;
+    border: 1px solid #125791;
+    transition: 0.5s;
+    text-decoration: none;
 }
 
 /* SCROLLBAR */
