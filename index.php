@@ -54,9 +54,9 @@ include("_head.php") ?>
                     </a>
                 </div>
             </form>
-            <!-- <footer class="DEUSTANOCODIGO">
+            <footer class="DEUSTANOCODIGO">
                 <p>EKBALLO</p>
-            </footer> -->
+            </footer>
         </div>
 
     </section>
