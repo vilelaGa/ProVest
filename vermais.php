@@ -57,10 +57,10 @@ include("_head.php");
         <div class="row" style="margin-top: 28px;">
             <div class="col-md-6 p-4 text-center">
                 <h2>AlfaCon <br><span class="spanCategoriaCurso">Militar</span> <span class="spanCategoriaCurso">Concurso Publico</span> <span class="spanView"><i style="color: #f5e200;" class="bi bi-star-fill"></i>5</span></h2>
-                <img class="mt-3" style="object-fit: cover; border-radius: 16px;" width="400px" height="250px" src="https://assets.alfaconcursos.com.br/assets/layout/alfacon/gptw/img_cta-5b4edbc8fc296192ea77c971cd46275de4f9de8810499026cb10a6489244c378.jpg" alt="...">
+                <img class="mt-3 imgSize" style="object-fit: cover; border-radius: 16px;" src="https://assets.alfaconcursos.com.br/assets/layout/alfacon/gptw/img_cta-5b4edbc8fc296192ea77c971cd46275de4f9de8810499026cb10a6489244c378.jpg" alt="...">
             </div>
             <div class="col-md-6 p-4">
-                <center class="mt-3">
+                <center class="mt-3 btWrap">
                     <a href="#" class="btnEntrarContato text-center">Contato pelo chat</a>
                     <a href="#" class="btnOutrosContatos text-center">Outras formas de contato</a>
                 </center>

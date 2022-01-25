@@ -25,7 +25,8 @@ include("_head.php");
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logoProVest.png" alt="logoProvest" width="50" height="50">
-                <span>ProVest</span>
+                <span style="    color: #fff;
+    font-size: 1.5rem;">ProVest</span>
             </a>
         </div>
     </nav>

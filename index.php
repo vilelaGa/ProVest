@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include("_head.php") ?>
+<?php
+define("NOME_PAGINA", "Início");
+include("_head.php") ?>
 
-<body>
+<body style="background-color: #f4f4f4">
 
     <!-- início do preloader -->
     <div id="preloader">
@@ -22,6 +24,22 @@
 
         <?php include('_nav.php'); ?>
 
+        <div class="text-center">
+            <div class="navSlack">
+                <ul class="listaNav">
+                    <a href="#" class="line">
+                        <li>Quem somos </li>
+                    </a>
+                    <a href="#" class="line">
+                        <li>Cursos em destaque</li>
+                    </a>
+                    <a href="#" class="line">
+                        <li>Assine já</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
         <div class="bg-video">
             <video autoplay muted loop style="filter: saturate( 0% )!important;">
                 <source src="assets/img/pexels-yan-krukov-8197045.mp4" type="video/mp4">
@@ -36,9 +54,9 @@
                     </a>
                 </div>
             </form>
-            <footer class="DEUSTANOCODIGO">
+            <!-- <footer class="DEUSTANOCODIGO">
                 <p>EKBALLO</p>
-            </footer>
+            </footer> -->
         </div>
 
     </section>
