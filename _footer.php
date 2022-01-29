@@ -30,6 +30,9 @@
                     <a href="#">
                         <li>Cookies e política</li>
                     </a>
+                    <a href="#">
+                        <li>Assine já</li>
+                    </a>
                 </ul>
             </div>
         </div>

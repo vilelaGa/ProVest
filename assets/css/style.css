@@ -126,8 +126,60 @@
 }
 
 @media (max-width: 768px) {
+    .bg-video video {
+        height: 90vh;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .bg-rgb {
+        height: 90vh;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
     .navSlack {
-        width: 75%;
+        width: 100%;
+        margin-top: 87vh;
+        border-radius: 0;
+    }
+
+    .navSlack li {
+        margin-top: 10px;
+    }
+
+    .ProVest {
+        margin-top: 110px !important;
+    }
+
+    .ProVest h3 {
+        font-size: 26px !important;
+        text-align: center;
+    }
+
+    .ProVest p {
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .bloco1 {
+        margin-top: 6rem !important;
+        margin-left: 2.8rem !important;
+    }
+
+    .bloco2 {
+        margin-left: 2.8rem !important;
+    }
+
+    .bloco3 {
+        margin-left: 2.8rem !important;
+        margin-top: 18px !important;
+
+    }
+
+    .carousel, .slide, .containerCarrosel {
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
     }
 }
 
@@ -136,7 +188,7 @@
     text-decoration: none;
     list-style: none;
     justify-content: center;
-    padding-left: 12px;
+    padding-left: 0px;
     padding-right: 12px;
 }
 
@@ -221,7 +273,7 @@
 
 .containerCarrosel {
     background-color: #000;
-    border-top: 4px solid rgb(37, 37, 37);
+    border-top: 4px solid #000;
 
 }
 
@@ -254,18 +306,11 @@
 
 .linksLogSig a {
     font-weight: 100;
+    color: rgb(255 255 255 / 40%) !important;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: rgb(255 255 255 / 40%);
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .colorLinks {
-    color: rgb(255 255 255 / 80%);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(255 255 255 / 40%);
+.linksLogSig a:hover {
+    color: rgb(255 255 255 / 80%) !important;
 }
 
 .colorLinks {
@@ -703,6 +748,6 @@ dl, ol, ul {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #c4c4c4;
+    background: #808080;
     border-radius: 25px;
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav style="transition: 0.5s;" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
         <a class="navbar-brand linkLogo" href="#">
             <img width="50px" height="50px" src="assets/img/logoProVest.png">

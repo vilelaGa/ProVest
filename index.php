@@ -21,12 +21,37 @@ include("_head.php") ?>
     <!-- fim do preloader -->
 
     <section class="bg-rgb">
-    <style>
-        .navbar {
-            /* backdrop-filter: blur(10px) !important;
+        <style>
+            .scrolling-active {
+                background-color: #fff !important;
+                box-shadow: 0 0 1em rgba(180, 180, 180, 0.486);
+                border-bottom: 1px solid rgba(180, 180, 180, 0.486);
+                transition: 0.5s;
+            }
+
+            .scrolling-active .navProVest {
+                color: #000;
+
+            }
+
+            .scrolling-active .colorLinks {
+                border: 1px solid #000;
+
+            }
+
+            .scrolling-active .linksLogSig a {
+                color: #000 !important;
+            }
+
+            .scrolling-active .linksLogSig a:hover {
+                color: #c4c4c4 !important;
+            }
+
+            .navbar {
+                /* backdrop-filter: blur(10px) !important;
             border-bottom: 1px solid rgba(180, 180, 180, 0.486); */
-        }
-    </style>
+            }
+        </style>
 
         <?php include('_nav.php'); ?>
 
@@ -547,11 +572,24 @@ include("_head.php") ?>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <h3 class="mt-5">Lideres</h3>
+                <div class="col-md-6 mt-5">
+                    <img style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover" src="assets/img/gabi.jpg" alt="ImgGabi">
+                    <p class="mt-3">Gabriel de Souza Lima Vilela <br><span>Desenvolvedor Web</span></p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <img style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover" src="assets/img/dani.PNG" alt="ImgDani">
+                    <p class="mt-3">Daniel Silva e Souza <br><span>Desenvolvedor Python</span></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <?php include('_footer.php'); ?>
     </section>
-
-
-
-
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/jquery/jquery-3.6.0.min.js"></script>
@@ -565,6 +603,13 @@ include("_head.php") ?>
             });
         })
         //]]>
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            let nav = document.querySelector('nav');
+            let windowPosition = window.scrollY > 0;
+            nav.classList.toggle('scrolling-active', windowPosition);
+        })
     </script>
 </body>
 
