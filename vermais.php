@@ -103,16 +103,16 @@ include("_head.php");
                 <div class="tab-content" id="myTabContent" style="margin-top: 24px;
     align-items: center;">
                     <div class="tab-pane fade show active" id="site" role="tabpanel" aria-labelledby="site-tab">
-                    <a class="btnSiteVerMais" href="#">Visite nosso site</a>
+                        <a class="btnSiteVerMais" href="#">Visite nosso site</a>
                     </div>
                     <div class="tab-pane fade show" id="telefone" role="tabpanel" aria-labelledby="telefone-tab">
                         <a class="btnTelefVerMais" href="#"><i class="bi bi-telephone-fill"></i> +55 24 3322-5111</a>
                     </div>
                     <div class="tab-pane fade" id="celular" role="tabpanel" aria-labelledby="celular-tab">
-                    <a class="btnWhatsVerMais" href="#"><i class="bi bi-whatsapp"></i> +55 24 99814-0723</a>
+                        <a class="btnWhatsVerMais" href="#"><i class="bi bi-whatsapp"></i> +55 24 99814-0723</a>
                     </div>
                     <div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab">
-                    <a class="btnEmailVerMais" href="#"><i class="bi bi-google"></i> garielvilela003@gmail.com</a>    
+                        <a class="btnEmailVerMais" href="#"><i class="bi bi-google"></i> garielvilela003@gmail.com</a>
                     </div>
                 </div>
             </div>
