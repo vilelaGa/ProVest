@@ -11,8 +11,8 @@
 
         <div class="collapse navbar-collapse linksLogSig" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active colorLinks text-center mb-2" aria-current="page" href="#">Login</a>
-                <a class="nav-link colorLinks text-center mb-2" href="#">Cadastre-se</a>
+                <a class="nav-link active colorLinks text-center mb-2" aria-current="page" href="login-cadastro">Login</a>
+                <a class="nav-link colorLinks text-center mb-2" href="login-cadastro">Cadastre-se</a>
             </div>
         </div>
 </nav>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -81,10 +82,28 @@ include("_head.php");
                                 <div class="container widthContainer">
                                     <div class="row">
                                         <div class="col-md-12 cardForm">
-                                            <form action="" method="POST">
+                                            <form action="gerencie/c-aluno.php" method="POST">
+                                                <?php
+                                                if (isset($_SESSION['erroA'])) :
+                                                ?>
+                                                    <span>ERRO</span>
+                                                <?php
+                                                endif;
+                                                unset($_SESSION['erroA']);
+                                                ?>
+                                                <?php
+                                                if (isset($_SESSION['erroEmailA'])) :
+                                                ?>
+                                                    <span>erroEMAIL</span>
+                                                <?php
+                                                endif;
+                                                unset($_SESSION['erroEmailA']);
+                                                ?>
                                                 <input type="text" class="form-control" name="nomeUserAluno" placeholder="Nome"><br>
-                                                <input type="text" class="form-control" name="estadoUserAluno" placeholder="Estado"><br>
-                                                <input type="text" class="form-control" name="cidadeUserAluno" placeholder="Cidade"><br>
+                                                <select class="form-select" aria-label="Default select example" name="estadoUserAluno" id="Estado"></select><br>
+                                                <select class="form-select" aria-label="Default select example" name="cidadeUserAluno" id="Cidade">
+                                                    |<option>Cidade</option>
+                                                </select><br>
                                                 <input type="email" class="form-control" name="emailUserAluno" placeholder="Email"><br>
                                                 <input type="password" class="form-control" name="passLoginAluno" placeholder="Senha"><br>
                                                 <button type="submit" class="form-control btnLogin">Cadastrar</button>
@@ -98,10 +117,28 @@ include("_head.php");
                                 <div class="container widthContainer">
                                     <div class="row">
                                         <div class="col-md-12 cardForm">
-                                            <form action="" method="POST">
+                                            <form action="gerencie/c-professor.php" method="POST">
+                                                <?php
+                                                if (isset($_SESSION['erroP'])) :
+                                                ?>
+                                                    <span>ERRO</span>
+                                                <?php
+                                                endif;
+                                                unset($_SESSION['erroP']);
+                                                ?>
+                                                <?php
+                                                if (isset($_SESSION['erroEmailP'])) :
+                                                ?>
+                                                    <span>erroEMAIL</span>
+                                                <?php
+                                                endif;
+                                                unset($_SESSION['erroEmailP']);
+                                                ?>
                                                 <input type="text" class="form-control" name="nomeUserProf" placeholder="Nome"><br>
-                                                <input type="text" class="form-control" name="estadoUserProf" placeholder="Estado"><br>
-                                                <input type="text" class="form-control" name="cidadeUserProf" placeholder="Cidade"><br>
+                                                <select class="form-select" aria-label="Default select example" name="estadoUserProf" id="EstadoP"></select><br>
+                                                <select class="form-select" aria-label="Default select example" name="cidadeUserProf" id="CidadeP">
+                                                    |<option>Cidade</option>
+                                                </select><br>
                                                 <input type="email" class="form-control" name="emailUserProf" placeholder="Email"><br>
                                                 <input type="password" class="form-control" name="passLoginProf" placeholder="Senha"><br>
                                                 <button type="submit" class="form-control btnLogin">Cadastrar</button>
@@ -126,6 +163,8 @@ include("_head.php");
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/jquery/selectA.js"></script>
+    <script src="assets/jquery/selectP.js"></script>
     <script>
         //<![CDATA[
         $(window).on('load', function() {

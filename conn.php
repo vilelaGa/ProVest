@@ -1,1 +1,2 @@
-<?php include("dash/connect.php");?>
+<?php 
+include 'gerencie/connect.php';

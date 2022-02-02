@@ -58,10 +58,10 @@ include("_head.php") ?>
         <div class="text-center">
             <div class="navSlack">
                 <ul class="listaNav">
-                    <a href="#" class="line">
+                    <a href="#quem-somos" class="line">
                         <li>Quem somos </li>
                     </a>
-                    <a href="#" class="line">
+                    <a href="#curso-destaque" class="line">
                         <li>Cursos em destaque</li>
                     </a>
                     <a href="#" class="line">
@@ -90,7 +90,7 @@ include("_head.php") ?>
             </footer>
         </div>
 
-        <div class="container">
+        <div class="container" id="quem-somos">
             <div class="row">
                 <div class="col-md-6 ProVest">
                     <h3>Veja como funciona o ProVest</h3>
@@ -120,7 +120,7 @@ include("_head.php") ?>
     border-top-left-radius: 80px;  border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; padding-bottom: 80px;     background-image: linear-gradient(to bottom, #000 90%, #fff);" id="carouselExampleControls" class="carousel slide containerCarrosel" data-bs-ride="carousel">
 
-            <div class="text-center tairol">
+            <div id="curso-destaque" class="text-center tairol">
                 <h1 style="margin-top: 40px;" class="mb-5">Cursos em Destaques</h1>
             </div>
             <div class="carousel-inner">

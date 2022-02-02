@@ -95,7 +95,7 @@ include("_head.php");
                             Pré-Enem
                         </span><br><br>
 
-                        <a href="#" class="btn btn-primary btnVerMais">Ver mais</a>
+                        <a href="ver-mais" class="btn btn-primary btnVerMais">Ver mais</a>
                     </div>
                 </div>
             </div>
