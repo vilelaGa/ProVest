@@ -5,7 +5,6 @@ include 'connect.php';
 $sqlSelect = "SELECT email_professor FROM professor";
 $querySelect = $pdo->prepare($sqlSelect);
 $execQuerySelect = $querySelect->execute();
-
 $linha = $querySelect->fetchAll(PDO::FETCH_ASSOC);
 
 $nome = $_POST['nomeUserProf'];
@@ -13,7 +12,10 @@ $estado = $_POST['estadoUserProf'];
 $cidade = $_POST['cidadeUserProf'];
 $email = $_POST['emailUserProf'];
 $senha = $_POST['passLoginProf'];
-$senhaCripto = md5($senha . "YESHUAEKBALLOELOI");
+$senhaCripto = password_hash($senha, PASSWORD_DEFAULT);
+
+foreach ($linha as $res) {
+}
 
 function ValidarEmail($email)
 {
@@ -25,7 +27,7 @@ function ValidarEmail($email)
 }
 
 if (!empty($nome) && !empty($estado) && !empty($cidade) && !empty($email) && !empty($senha)) {
-    if (ValidarEmail($email) && $estado != "EstadoP" && $cidade != "Cidade") {
+    if (ValidarEmail($email) && $email != $res['email_professor'] && $estado != "EstadoP" && $cidade != "CidadeP") {
         $sql = "INSERT INTO professor (senha_professor, nome_professor, estado_professor, cidade_professor, email_professor, data_professor, hora_professor) VALUE('$senhaCripto', '$nome','$estado', '$cidade','$email', NOW(), NOW())";
         $query = $pdo->prepare($sql);
         $execQuery = $query->execute();

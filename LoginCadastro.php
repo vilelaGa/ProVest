@@ -24,7 +24,7 @@ include("_head.php");
 
     <nav class="navbar colorNavBarLogin text-center">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="http://localhost/provest/provestreal/">
                 <img src="./assets/img/logoProVest.png" alt="logoProvest" width="50" height="50">
                 <span style="    color: #fff;
     font-size: 1.5rem;">ProVest</span>
@@ -102,7 +102,7 @@ include("_head.php");
                                                 <input type="text" class="form-control" name="nomeUserAluno" placeholder="Nome"><br>
                                                 <select class="form-select" aria-label="Default select example" name="estadoUserAluno" id="Estado"></select><br>
                                                 <select class="form-select" aria-label="Default select example" name="cidadeUserAluno" id="Cidade">
-                                                    |<option>Cidade</option>
+                                                    <option>Cidade</option>
                                                 </select><br>
                                                 <input type="email" class="form-control" name="emailUserAluno" placeholder="Email"><br>
                                                 <input type="password" class="form-control" name="passLoginAluno" placeholder="Senha"><br>
@@ -137,7 +137,7 @@ include("_head.php");
                                                 <input type="text" class="form-control" name="nomeUserProf" placeholder="Nome"><br>
                                                 <select class="form-select" aria-label="Default select example" name="estadoUserProf" id="EstadoP"></select><br>
                                                 <select class="form-select" aria-label="Default select example" name="cidadeUserProf" id="CidadeP">
-                                                    |<option>Cidade</option>
+                                                    <option>CidadeP</option>
                                                 </select><br>
                                                 <input type="email" class="form-control" name="emailUserProf" placeholder="Email"><br>
                                                 <input type="password" class="form-control" name="passLoginProf" placeholder="Senha"><br>
