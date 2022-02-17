@@ -2,7 +2,7 @@
 session_start();
 include 'connect.php';
 
-$sqlSelect = "SELECT email_aluno FROM alunos";
+$sqlSelect = "SELECT email_aluno FROM aluno";
 $querySelect = $pdo->prepare($sqlSelect);
 $execQuerySelect = $querySelect->execute();
 $linha = $querySelect->fetchAll(PDO::FETCH_ASSOC);
@@ -28,7 +28,7 @@ function ValidarEmail($email)
 
 if (!empty($nome) && !empty($estado) && !empty($cidade) && !empty($email) && !empty($senha)) {
     if (ValidarEmail($email) && $email != $res['email_aluno'] && $estado != "Estado" && $cidade != "Cidade") {
-        $sql = "INSERT INTO alunos (senha_aluno, nome_aluno, estado_aluno, cidade_aluno, email_aluno, data_alunos, hora_alunos) VALUE('$senhaCripto', '$nome','$estado', '$cidade','$email', NOW(), NOW())";
+        $sql = "INSERT INTO aluno (senha_aluno, nome_aluno, estado_aluno, cidade_aluno, email_aluno, data_alunos, hora_alunos) VALUE('$senhaCripto', '$nome','$estado', '$cidade','$email', NOW(), NOW())";
         $query = $pdo->prepare($sql);
         $execQuery = $query->execute();
         header("Location: ../login-cadastro");

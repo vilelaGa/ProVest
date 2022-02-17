@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+    RewriteEngine On
+    RewriteCond %{SERVER_PORT} 80
+
+
+
+	RewriteRule  ^/?$                       index.php [NC]
+
+    RewriteRule  login-cadastro^/?$                       LoginCadastro.php [NC]
+
+    # RewriteRule ^vaga/([a-z0-9-]+)/([0-9]+)/?$                         detalhe-vaga.php?id=$2 [NC]
+
+    # RewriteRule ^lixo/([a-z0-9-]+)/([0-9]+)/([0-9]+)/?$                         detalhe-vaga.php?id=$2&perfil=$3 [NC]
+
+    
+    
+
+</IfModule>

@@ -577,11 +577,11 @@ include("_head.php") ?>
             <div class="row">
                 <h3 class="mt-5">Lideres</h3>
                 <div class="col-md-6 mt-5">
-                    <img style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover" src="assets/img/gabi.jpg" alt="ImgGabi">
+                    <img style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover" src="assets/img/gabi.jpeg" alt="ImgGabi">
                     <p class="mt-3">Gabriel de Souza Lima Vilela <br><span>Desenvolvedor Web</span></p>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <img style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover" src="assets/img/dani.PNG" alt="ImgDani">
+                    <img style="border-radius: 100px; width: 200px; height: 200px; object-fit: cover" src="assets/img/daniel.jpeg" alt="ImgDani">
                     <p class="mt-3">Daniel Silva e Souza <br><span>Desenvolvedor Python</span></p>
                 </div>
             </div>
