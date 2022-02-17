@@ -1,6 +1,6 @@
 <nav style="transition: 0.5s;" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand linkLogo" href="#">
+        <a class="navbar-brand linkLogo" href="home">
             <img width="50px" height="50px" src="assets/img/logoProVest.png">
             <h4 class="navProVest">ProVest</h4>
         </a>

@@ -24,7 +24,7 @@ include("_head.php");
 
     <nav class="navbar colorNavBarLogin text-center">
         <div class="container">
-            <a class="navbar-brand" href="http://localhost/provest/provestreal/">
+            <a class="navbar-brand" href="home">
                 <img src="./assets/img/logoProVest.png" alt="logoProvest" width="50" height="50">
                 <span style="    color: #fff;
     font-size: 1.5rem;">ProVest</span>

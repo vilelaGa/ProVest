@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 17-Fev-2022 às 00:11
+-- Tempo de geração: 17-Fev-2022 às 21:49
 -- Versão do servidor: 8.0.27
 -- versão do PHP: 7.4.26
 
@@ -37,6 +37,9 @@ CREATE TABLE IF NOT EXISTS `aluno` (
   `email_aluno` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `data_alunos` date NOT NULL,
   `hora_alunos` time NOT NULL,
+  `anoRegistro_aluno` year NOT NULL,
+  `periodo_aluno` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sexo_aluno` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `foto_aluno` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id_aluno`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
@@ -100,6 +103,9 @@ CREATE TABLE IF NOT EXISTS `professor` (
   `email_professor` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `data_professor` date NOT NULL,
   `hora_professor` time NOT NULL,
+  `anoRegistro_professor` year NOT NULL,
+  `materia_professor` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sexo_professor` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `foto_professor` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id_professor`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
