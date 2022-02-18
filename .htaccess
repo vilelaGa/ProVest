@@ -5,6 +5,7 @@
     RewriteRule ^home/?$                                                            index.php [NC]
     RewriteRule ^login-cadastro/?$                                                       LoginCadastro.php [NC]
     RewriteRule ^ver-mais/?$                                                       vermais.php [NC]
+    RewriteRule ^login-professor/?$                                                       login-professor.php [NC]
     # RewriteRule ^modalidades-de-locacao/?$                                      modalidades-de-locacao.php [NC]
     # RewriteRule ^faca-uma-avaliacao/?$                                          faca-uma-avaliacao.php [NC]
     # RewriteRule ^lei-do-inquilinato//?$                                         lei-do-inquilinato.php [NC]

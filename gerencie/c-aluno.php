@@ -28,7 +28,7 @@ function ValidarEmail($email)
 
 if (!empty($nome) && !empty($estado) && !empty($cidade) && !empty($email) && !empty($senha)) {
     if (ValidarEmail($email) && $email != $res['email_aluno'] && $estado != "Estado" && $cidade != "Cidade") {
-        $sql = "INSERT INTO aluno (senha_aluno, nome_aluno, estado_aluno, cidade_aluno, email_aluno, data_alunos, hora_alunos) VALUE('$senhaCripto', '$nome','$estado', '$cidade','$email', NOW(), NOW())";
+        $sql = "INSERT INTO aluno (senha_aluno, nome_aluno, estado_aluno, cidade_aluno, email_aluno, data_alunos, hora_alunos, anoRegistro_aluno) VALUE('$senhaCripto', '$nome','$estado', '$cidade','$email', NOW(), NOW(), NOW())";
         $query = $pdo->prepare($sql);
         $execQuery = $query->execute();
         header("Location: ../login-cadastro");

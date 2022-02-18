@@ -50,11 +50,13 @@ include("_head.php");
                         <div class="container widthContainer">
                             <div class="row">
                                 <div class="col-md-12 cardForm">
-                                    <form action="" method="POST">
+                                    <form action="gerencie/login-a.php" method="POST">
                                         <input type="email" class="form-control" name="emailUser" placeholder="Email"><br>
                                         <input type="password" class="form-control" name="passLogin" placeholder="Senha"><br>
                                         <button type="submit" class="form-control btnLogin">Login</button>
                                     </form>
+                                    <p style="margin-top: 12px;
+    font-size: 14px;">Login para <a href="login-professor">Professores</a></p>
                                 </div>
                             </div>
                         </div>

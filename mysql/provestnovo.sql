@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 17-Fev-2022 às 21:49
+-- Tempo de geração: 18-Fev-2022 às 02:04
 -- Versão do servidor: 8.0.27
 -- versão do PHP: 7.4.26
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `aluno` (
   `data_alunos` date NOT NULL,
   `hora_alunos` time NOT NULL,
   `anoRegistro_aluno` year NOT NULL,
-  `periodo_aluno` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `periodo_aluno` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `sexo_aluno` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `foto_aluno` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id_aluno`)
