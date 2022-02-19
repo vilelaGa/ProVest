@@ -15,7 +15,7 @@ $dados = $query->fetch(PDO::FETCH_ASSOC,PDO::FETCH_OBJ);
 
 if (password_verify($senhaProfessor, $dados['senha_professor'])) {
     $_SESSION['id_professor'] = $dados['id_professor'];
-    header("Location: ../dashProf.php");
+    header("Location: ../professor/dash-professor");
 } else {
     $_SESSION['user_invalido'] = true;
 }

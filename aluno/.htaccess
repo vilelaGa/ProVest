@@ -1,0 +1,55 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    RewriteRule ^dash-aluno/?$                                                            dashAluno.php [NC]
+    # RewriteRule ^login-cadastro/?$                                                       LoginCadastro.php [NC]
+    # RewriteRule ^ver-mais/?$                                                       vermais.php [NC]
+    # RewriteRule ^login-professor/?$                                                       login-professor.php [NC]
+    # RewriteRule ^modalidades-de-locacao/?$                                      modalidades-de-locacao.php [NC]
+    # RewriteRule ^faca-uma-avaliacao/?$                                          faca-uma-avaliacao.php [NC]
+    # RewriteRule ^lei-do-inquilinato//?$                                         lei-do-inquilinato.php [NC]
+    # RewriteRule ^boleto-do-locatario/?$                                         boleto-do-locatario.php [NC]
+    # RewriteRule ^demonstrativo-do-locador/?$                                    demonstrativo-do-locador.php [NC]
+    # RewriteRule ^fale-conosco/?$                                                fale-conosco.php [NC]
+    # RewriteRule ^encontraremos-seu-imovel/?$                                    encontrar.php [NC]
+    # RewriteRule ^anuncie-seu-imovel/?$                                          anuncie.php [NC]
+    # RewriteRule ^indique/?$                                                     indique.php [NC]
+    # RewriteRule ^contato/?$                                                     contato.php [NC]
+    # RewriteRule ^contato-servicos/?$                                            contatoS.php [NC]
+    # RewriteRule ^servicos/?$                                                    servicos.php [NC]
+    # RewriteRule ^lancamentos/?$                                                 lancamentos.php [NC]
+    # RewriteRule ^encontre-seu-imovel/?$                                         busca_imovel.php [NC]
+
+    # RewriteRule ^imoveis/?$                                                     imoveis.php?t=0 [NC]
+    # RewriteRule ^imoveis/([0-9]+)/?$                                            imoveis.php?t=0&pagina=$1 [NC]
+    # RewriteRule ^imoveis/venda/([a-z0-9-]+)/([0-9]+)/?$                         interna-imovel.php?t=1&id=$2 [NC]
+    # RewriteRule ^imoveis/aluguel/([a-z0-9-]+)/([0-9]+)/?$                       interna-imovel.php?t=2&id=$2 [NC]
+
+
+    # RewriteRule ^imoveis/venda/?$                                               imoveis.php?t=1 [NC]
+    # RewriteRule ^imoveis/venda/pag/([0-9]+)/?$                                  imoveis.php?t=1&p=$1 [NC]
+    # RewriteRule ^imoveis/venda/c/([a-z0-9-]+)/([0-9]+)/([0-9]+)/?$                       filtro_imoveis.php?t=1&c=$1&n=$2&pagina=$3 [NC]
+    # RewriteRule ^imoveis/venda/c/([a-z0-9-]+)/([0-9]+)/pag/([0-9]+)/?$          filtro_imoveis.php?t=1&c=$2&p=$3 [NC]
+
+    # RewriteRule ^imoveis/aluguel/?$                                             imoveis.php?t=2 [NC]
+    # RewriteRule ^imoveis/aluguel/pag/([0-9]+)/?$                                imoveis.php?t=2&p=$1 [NC]
+    # RewriteRule ^imoveis/aluguel/c/([a-z0-9-]+)/([0-9]+)/([0-9]+)/?$                     filtro_imoveis2.php?t=2&c=$1&n=$2&pagina=$3 [NC]
+    # RewriteRule ^imoveis/aluguel/c/([a-z0-9-]+)/([0-9]+)/pag/([0-9]+)/?$        imoveis.php?t=2&c=$2&p=$3 [NC]
+
+    # RewriteRule ^servicos/([a-z0-9-]+)/?$                                       servicos.php?s=$1 [NC]
+
+    # RewriteRule ^lancamentos/([0-9]+)/?$                                        lancamentos.php?t=0&pagina=$1 [NC]
+
+    # RewriteRule ^busca/\.php?b=(.*)$                                            /busca/$1 [R=301,L]
+    # RewriteRule ^busca/(.*)$                                                    imoveis.php [NC]
+
+
+    # RewriteRule ^busca/c/([a-z0-9-]+)/([0-9]+)/b\.php?b=(.*)$                   /busca/c/([a-z0-9-]+)/([0-9]+)/b/$1 [R=301,L]
+    # RewriteRule ^busca/c/([a-z0-9-]+)/([0-9]+)/b/(.*)$                          imoveis.php?catName=$1&c=$2&b=$3 [NC]
+
+
+    # RewriteRule ^busca/c/([a-z0-9-]+)/([0-9]+)/b/\.php?b=(.*)/pag/([0-9]+)/$    /busca/c/([a-z0-9-]+)/([0-9]+)/b/$1/pag/([0-9]+)/ [R=301,L]
+    # RewriteRule ^busca/c/([a-z0-9-]+)/([0-9]+)/b/(.*)/pag/([0-9]+)/$            imoveis.php?catName=$1&c=$2&b=$3&p=$4 [NC]
+
+</IfModule>
