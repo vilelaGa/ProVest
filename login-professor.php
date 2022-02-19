@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -34,7 +35,15 @@ include("_head.php"); ?>
             <h2 class="mt-3 text-center">Professores</h2>
             <hr>
             <div class="col-md-12 cardForm text-center">
-                <form action="" method="POST">
+                <form action="gerencie/login-p.php" method="POST">
+                    <?php
+                    if (isset($_SESSION['user_invalido'])) :
+                    ?>
+                        <span>Credencias Incorretas</span>
+                    <?php
+                    endif;
+                    unset($_SESSION['user_invalido']);
+                    ?>
                     <input type="email" class="form-control" name="emailUser" placeholder="Email"><br>
                     <input type="password" class="form-control" name="passLogin" placeholder="Senha"><br>
                     <button type="submit" class="form-control btnLogin">Login</button>

@@ -7,11 +7,11 @@ $querySelect = $pdo->prepare($sqlSelect);
 $execQuerySelect = $querySelect->execute();
 $linha = $querySelect->fetchAll(PDO::FETCH_ASSOC);
 
-$nome = $_POST['nomeUserAluno'];
-$estado = $_POST['estadoUserAluno'];
-$cidade = $_POST['cidadeUserAluno'];
-$email = $_POST['emailUserAluno'];
-$senha = $_POST['passLoginAluno'];
+$nome = filter_var($_POST['nomeUserAluno'], FILTER_SANITIZE_ADD_SLASHES);
+$estado = filter_var($_POST['estadoUserAluno'], FILTER_SANITIZE_ADD_SLASHES);
+$cidade = filter_var($_POST['cidadeUserAluno'], FILTER_SANITIZE_ADD_SLASHES);
+$email = filter_var($_POST['emailUserAluno'], FILTER_SANITIZE_EMAIL);
+$senha = filter_var($_POST['passLoginAluno'], FILTER_SANITIZE_ADD_SLASHES);
 $senhaCripto = password_hash($senha, PASSWORD_DEFAULT);
 
 foreach ($linha as $res) {

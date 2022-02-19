@@ -51,6 +51,14 @@ include("_head.php");
                             <div class="row">
                                 <div class="col-md-12 cardForm">
                                     <form action="gerencie/login-a.php" method="POST">
+                                        <?php
+                                        if (isset($_SESSION['user_invalido'])) :
+                                        ?>
+                                            <span>Credencias Incorretas</span>
+                                        <?php
+                                        endif;
+                                        unset($_SESSION['user_invalido']);
+                                        ?>
                                         <input type="email" class="form-control" name="emailUser" placeholder="Email"><br>
                                         <input type="password" class="form-control" name="passLogin" placeholder="Senha"><br>
                                         <button type="submit" class="form-control btnLogin">Login</button>

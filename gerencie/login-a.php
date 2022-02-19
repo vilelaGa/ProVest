@@ -1,18 +1,23 @@
 <?php
 
-// session_start();
-// include 'connect.php';
+session_start();
+include 'connect.php';
 
-// $emailAluno = $_POST['emailUser'];
-// $senhaAluno = $_POST['passLogin'];
-// $senhaCripto = password_hash($senhaAluno, PASSWORD_DEFAULT);
+$emailAluno = filter_var($_POST['emailUser'], FILTER_SANITIZE_EMAIL);
+$senhaAluno = filter_var($_POST['passLogin'], FILTER_SANITIZE_ADD_SLASHES);
+$senhaCripto = password_hash($senhaAluno, PASSWORD_DEFAULT);
 
-// $sql = "SELECT * FROM alunos WHERE senha_aluno = $senhaCripto and email_aluno = $senhaCripto";
-// $query = $pdo->prepare($sql);
-// $query->execute();
-// $linha = $query->fetchAll(PDO::FETCH_ASSOC);
+$sql = "SELECT id_aluno, senha_aluno FROM aluno WHERE email_aluno = :email";
+$query = $pdo->prepare($sql);
+$query->bindValue(":email", $emailAluno, PDO::PARAM_STR);
+$query->execute();
+$dados = $query->fetch(PDO::FETCH_ASSOC,PDO::FETCH_OBJ);
 
-// var_dump($linha);
-
+if (password_verify($senhaAluno, $dados['senha_aluno'])) {
+    $_SESSION['id_aluno'] = $dados['id_aluno'];
+    header("Location: ../dash.php");
+} else {
+    $_SESSION['user_invalido'] = true;
+}
 
 ?>
