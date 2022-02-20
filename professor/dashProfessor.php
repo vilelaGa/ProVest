@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+<?php
+session_start();
+include '../gerencie/verifyProfessor.php'; 
 define("NOME_PAGINA", "Dashboard Professor");
 include "_head.php"; 
 ?>
@@ -79,7 +81,7 @@ include "_head.php";
 
             <div class="bottom-content">
                 <li class="">
-                    <a href="#">
+                    <a href="../gerencie/logout.php">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>

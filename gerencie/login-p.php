@@ -11,13 +11,18 @@ $sql = "SELECT id_professor, senha_professor FROM professor WHERE email_professo
 $query = $pdo->prepare($sql);
 $query->bindValue(":email", $emailProfessor, PDO::PARAM_STR);
 $query->execute();
-$dados = $query->fetch(PDO::FETCH_ASSOC,PDO::FETCH_OBJ);
+
+if (($query) && $query->rowCount() != 0) {
+    $dados = $query->fetch(PDO::FETCH_ASSOC,PDO::FETCH_OBJ);
+} else {
+    $_SESSION['user_invalido'] = true;
+    header("Location: ../login-professor");
+}
 
 if (password_verify($senhaProfessor, $dados['senha_professor'])) {
     $_SESSION['id_professor'] = $dados['id_professor'];
     header("Location: ../professor/dash-professor");
 } else {
     $_SESSION['user_invalido'] = true;
+    header("Location: ../login-professor");
 }
-
-?>
