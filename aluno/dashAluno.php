@@ -5,19 +5,39 @@
 session_start();
 include '../gerencie/verifyAluno.php';
 define("NOME_PAGINA", "Dashboard Aluno");
-include "_head.php"; ?>
+include "_head.php"; 
+
+$id_aluno = $_SESSION['id_aluno'];
+
+?>
+
+
+<?php
+
+include "../gerencie/connect.php";
+
+$sql = "SELECT * FROM aluno WHERE id_aluno = $id_aluno";
+$query = $pdo->prepare($sql);
+$query->execute();
+
+$dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
+
+?>
 
 <body>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
+
                 <span class="image">
-                    <img src="../assets/img/logoProVest.png" alt="">
+                    <a href="../aluno/dash-aluno" title="Dash">
+                        <img src="../assets/img/logoProVest.png" alt="">
+                    </a>
                 </span>
 
                 <div class="text logo-text">
                     <span class="name">ProVest - Aluno</span>
-                    <span class="profession">Gabriel Vilela</span>
+                    <span class="profession"><?= substr($dados['nome_aluno'], 0, 8); ?></span>
                 </div>
             </div>
 
@@ -34,9 +54,9 @@ include "_head.php"; ?>
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="../aluno/perfil-aluno" title="Perfil">
                             <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Dashboard</span>
+                            <span class="text nav-text">Perfil</span>
                         </a>
                     </li>
 
@@ -104,7 +124,7 @@ include "_head.php"; ?>
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Sidebar</div>
+        <div class="text">Dashboard</div>
     </section>
 
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>

@@ -3,6 +3,7 @@
     RewriteEngine On
 
     RewriteRule ^dash-professor/?$                                                            dashProfessor.php [NC]
+    RewriteRule ^perfil-professor/?$                                                            perfil.php [NC]
     # RewriteRule ^login-cadastro/?$                                                       LoginCadastro.php [NC]
     # RewriteRule ^ver-mais/?$                                                       vermais.php [NC]
     # RewriteRule ^login-professor/?$                                                       login-professor.php [NC]

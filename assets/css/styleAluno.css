@@ -304,6 +304,7 @@ body.dark .switch::before {
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
+    padding: 12px;
 }
 
 .home .text {
@@ -355,4 +356,110 @@ ol, ul {
         padding: 12px 60px;
         display: none;
     }
+}
+
+
+/* NOSSO CONTAINER */
+
+.fundoWall {
+    border: 1px solid #000 !important;
+    background-image: url("../img/pexels-photo-3648850.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 30vh;
+}
+
+.fundoFoto-user {
+    padding: 12px;
+    margin-top: -90px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50vh;
+    width: 80%;
+}
+
+.img-user {
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.iconMais {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -30px;
+    background: #fff;
+    font-size: 25px;
+    padding: 3px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.img-fluid {
+    max-width: 55% !important;
+}
+
+.userEsco {
+    color: #707070;
+    font-size: 14px;
+
+}
+
+.btn-att {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-radius: 50px !important;
+    transition: 0.5s;
+}
+
+.btn-att:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000;
+    transition: 0.5s;
+    border-radius: 50px !important;
+}
+
+.formPerfil {
+    padding: 12px;
+    margin-top: -90px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 65vh;
+    width: 100%;
+}
+
+.in {
+    border-radius: 50px !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #000000 !important;
+    border-radius: 50px;
+}
+
+.nav-link {
+
+    color: #000000 !important;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px !important;
+}
+
+.nav {
+    justify-content: center;
+}
+
+.btLoca {
+
+    margin-top: 7rem !important;
 }

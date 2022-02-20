@@ -4,7 +4,7 @@
 <?php
 session_start();
 include '../gerencie/verifyProfessor.php';
-define("NOME_PAGINA", "Dashboard Professor");
+define("NOME_PAGINA", "Perfil Professor");
 include "_head.php";
 
 $id_professor = $_SESSION['id_professor'];
@@ -121,7 +121,7 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard</div>
+        <div class="text">Perfil</div>
     </section>
 
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
