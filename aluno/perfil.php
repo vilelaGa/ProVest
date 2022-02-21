@@ -134,7 +134,9 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
 
                                 <input style="display: none;" type="file" name="upFoto" id="upFoto">
                                 <label for="upFoto"><img src="../assets/img/daniel.jpeg" class="img-fluid img-user" alt="..">
-                                    <i class="bi bi-plus-circle-fill iconMais"></i>
+                                    <div class="back">
+                                        <i class="bi bi-plus-circle-fill iconMais"></i>
+                                    </div>
                                 </label>
 
                                 <p style="margin-bottom: 0px;" class="mt-3"><strong><?= ucfirst(substr($dados['nome_aluno'], 0, 8)); ?></strong></p>
@@ -233,14 +235,14 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
                                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
 
-                                    <div class="container">
+                                        <div class="container">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Telefone</label>
-                                                    <input type="phone" class="form-control in" name="" placeholder="">
-                                                   <br>
+                                                    <input type="tel" id="telefone" class="form-control in" name="" placeholder="">
+                                                    <br>
                                                     <label>Celular</label>
-                                                    <input type="phone" class="form-control in" name="" placeholder="">
+                                                    <input type="phone" id="celular" class="form-control in" name="" placeholder="">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label>Email</label>
@@ -258,37 +260,6 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
 
                                     </div>
                                 </div>
-
-                                <!-- <div class="row">
-                                    <div class="col-md-6">
-                                        <label>Dados Pessoais</label>
-                                        <input type="text" class="form-control in" name="" placeholder="Nome"><br>
-                                        <select class="form-select in" aria-label="Default select example">
-                                            <option selected>Escolariade</option>
-                                            <option>Fundamental</option>
-                                            <option>Médio</option>
-                                            <option>Superior</option>
-                                        </select><br>
-                                        <select class="form-select in" aria-label="Default select example">
-                                            <option selected>Sexo</option>
-                                            <option>Masculino</option>
-                                            <option>Feminino</option>
-                                        </select><br>
-                                        <input type="number" class="form-control in" placeholder="Idade"><br>
-                                        <label>Contato</label>
-                                        <input type="phone" class="form-control in" name="" placeholder="Telefone"><br>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Localização</label>
-
-                                        <select class="form-select in" aria-label="Default select example" name="estadoUserAluno" id="Estado"></select><br>
-                                        <select class="form-select in" aria-label="Default select example" name="cidadeUserAluno" id="Cidade">
-                                            <option>Cidade</option>
-                                        </select><br>
-                                        <input type="text" class="form-control in" name="" placeholder="Nacionalidade">
-                                    </div>
-                                </div> -->
-
                             </div>
 
                         </form>
@@ -303,6 +274,16 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
     <script src="../assets/jquery/jquery-3.6.0.min.js"></script>
     <script src="../assets/jquery/selectA.js"></script>
     <script src="../assets/jquery/selectP.js"></script>
+    <script src="../assets/jquery/jquery.min.js"></script>
+    <script src="../assets/jquery/jquery.maskedinput.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //Telefone
+            $("#telefone").mask("(99) 9999-9999")
+            //Celular
+            $("#celular").mask("(99) 99999-9999")
+        });
+    </script>
 
     <script>
         const body = document.querySelector('body'),
