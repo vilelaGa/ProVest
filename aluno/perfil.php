@@ -187,14 +187,13 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label>Idade</label>
-                                                    <input type="number" class="form-control in" name="" placeholder=""><br>
-                                                    <label>Nacionalidade</label>
-                                                    <select class="form-select in" aria-label="Default select example">
+                                                    <select class="form-select in" id="idade" aria-label="Default select example">
                                                         <option selected></option>
-                                                        <option></option>
-                                                        <option></option>
                                                     </select><br>
-
+                                                    <label>Nacionalidade</label>
+                                                    <select class="form-select in" id="nasc" aria-label="Default select example">
+                                                        <option selected></option>
+                                                    </select><br>
                                                 </div>
                                                 <div class="text-end">
                                                     <button type="submit" class="btn btn-att mt-4">Atualizar</button>
@@ -311,6 +310,30 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
                 modeText.innerText = "Dark mode";
 
             }
+        });
+    </script>
+
+    <script type="module">
+        import nacs from '../assets/js/nacionaliades.js';
+
+        const select = document.getElementById("nasc");
+
+        nacs.nacionalidade.forEach(resNaci => {
+            const option = document.createElement("option")
+            option.innerText = resNaci;
+            select.appendChild(option);
+        });
+    </script>
+
+    <script type="module">
+        import idade from '../assets/js/idade.js';
+
+        const selectIdade = document.getElementById("idade");
+
+        idade.idade.forEach(resIdade => {
+            const option = document.createElement("option")
+            option.innerText = resIdade;
+            selectIdade.appendChild(option);
         });
     </script>
 
