@@ -363,10 +363,7 @@ ol, ul {
 
 .fundoWall {
     border: 1px solid #000 !important;
-    background-image: url("../img/pexels-photo-3648850.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #000;
     border-radius: 10px;
     height: 30vh;
 }

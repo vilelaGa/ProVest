@@ -124,10 +124,10 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
 
         <div class="container">
             <div class="row">
-                <div class="col-md-12 fundoWall"></div>
+                <div class="col-md-12 fundoWall" id="particles-js"></div>
                 <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="position: relative;">
                         <form action="" method="POST" enctype="multipart/form-data">
 
                             <div class="fundoFoto-user text-center">
@@ -147,7 +147,7 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
                         </form>
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-8" style="position: relative;">
                         <form action="" method="POST">
 
                             <div class="formPerfil">
@@ -275,6 +275,8 @@ $dados = $query->fetch(PDO::FETCH_ASSOC, PDO::FETCH_OBJ);
     <script src="../assets/jquery/selectP.js"></script>
     <script src="../assets/jquery/jquery.min.js"></script>
     <script src="../assets/jquery/jquery.maskedinput.min.js"></script>
+    <script src="../assets/js/particles.js"></script>
+    <script src="../assets/js/app.js"></script>
     <script>
         $(document).ready(function() {
             //Telefone
